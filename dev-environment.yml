@@ -2,6 +2,8 @@ name: my-model2-dev
 channels:
   - conda-forge
 dependencies:
+  - python>=3.9,<3.12
+  - numpy
   - click
   - pydantic # until lume-services registered with conda
   - graphviz
@@ -10,7 +12,7 @@ dependencies:
   - pip 
   - pip: 
     - git+https://github.com/jbellister-slac/lume-services.git@prefect_2
-    - git+https://github.com/slaclab/lume-model.git  # Until lume-model updated in conda-forge
+    - git+https://github.com/slaclab/lume-model.git@v1.7.0  # Until lume-model updated in conda-forge
 
   # dev
   - pre-commit
