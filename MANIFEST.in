@@ -1,0 +1,6 @@
+recursive-include my_model2/files *
+include environment.yml
+include README.md
+include LICENSE
+include requirements.txt
+include setup.py

@@ -1,0 +1,10 @@
+name: my-model2
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9,<3.12
+  - prefect # until lume-services registered with conda
+  - pip 
+  - pip: 
+    - git+https://github.com/jbellister-slac/lume-services.git@prefect_2
+    - git+https://github.com/slaclab/lume-model.git  # Until lume-model updated in conda-forge
